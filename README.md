@@ -1,2 +1,3 @@
 # Emarket_Recommender
-Python API for the recommender
+
+@Python "Flask" API for the recommender
