@@ -8,9 +8,11 @@ from resources.svd_recommender import SVDRecommender as svd_recommend
 
 app = Flask(__name__)
 api = Api(app)
-
 api.add_resource(svd_recommend, "/recommend/<int:user_id>")
 
+@app.route('/')
+def index():
+    return "Emarket Recommender"
 
 if __name__== "__main__":
     app.run(debug=True)
