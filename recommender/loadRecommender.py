@@ -93,4 +93,4 @@ def recommend(user_id):
     #print(list_recommendations[0:5])
 
     print(data_to_send)
-    return data_to_send
+    return data_to_send[1]
