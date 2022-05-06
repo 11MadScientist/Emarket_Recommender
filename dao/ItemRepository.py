@@ -10,7 +10,18 @@ item = db.Table('item', db.metadata, autoload=True, autoload_with=db.engine)
 class ItemRepository:
     def getItems():
         results = db.session.query(item.c.id, item.c.overallreview).all()
-        for r in results:
-            print(r)
-            
+
+        # results = [(1, 4),
+        # (2, 5),
+        # (3, 3),
+        # (4, 3),
+        # (5, 3)]
+        
+        results = [list(x) for x in results]
+
+        for x in results:
+            x[1] = float(x[1])
+
+        print(results)
+
         return results

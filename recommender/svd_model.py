@@ -43,8 +43,8 @@ def unique(list1):
 def recommend(user_id):
     SVD_model = load_model('EmerkadoRecommender.pickle')
 
-    df = pd.read_csv('ratings_Emerkado2.csv')
-    df.drop('Timestamp', axis=1, inplace=True)
+    df = pd.read_csv('ratings_Emerkado.csv')
+    # df.drop('Timestamp', axis=1, inplace=True)
 
     # df = df.values.tolist()
     # from surprise import Reader, Dataset

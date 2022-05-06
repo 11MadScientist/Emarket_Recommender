@@ -1,7 +1,7 @@
 from flask import Flask
 from flask_restful import Api, Resource
 from resources.svd_recommender import SVDRecommender as svd_recommend
-from recommender.popularity_recommender import PopularityRecommender as popularity_recommender
+from recommender.popularity_model import PopularityRecommender as popularity_recommender
 from flask_sqlalchemy import SQLAlchemy
 
 

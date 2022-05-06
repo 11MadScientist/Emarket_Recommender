@@ -1,5 +1,5 @@
 from flask_restful import Api, Resource
-from recommender.loadRecommender import recommend
+from recommender.svd_model import recommend
 
 class SVDRecommender(Resource):
     
